@@ -86,11 +86,11 @@
         padding:0.25em;
       }
     </style>
-<title>Novo Projeto</title>
+<title>hr</title>
 </head>
 <body>
 <center>
-<h2>Novo Projeto</h2>
+<h2>hr</h2>
 </center>
 <h3>List of tables</h3>
 <ul>
@@ -194,7 +194,7 @@
 </td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">nome</td><td class="tdTableDefinition">nome</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+<td class="tdTableDefinition">nome</td><td class="tdTableDefinition">nome</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
@@ -204,7 +204,7 @@
 <tr valign="top">
 <td class="tdTableDefinition">id_localizacao
                 &nbsp;(<a href="#localizacoes">FK</a>)
-              </td><td class="tdTableDefinition">id_localizacao</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+              </td><td class="tdTableDefinition">id_localizacao</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
@@ -214,7 +214,7 @@
 <tr valign="top">
 <td class="tdTableDefinition">id_gerente
                 &nbsp;(<a href="#empregados">FK</a>)
-              </td><td class="tdTableDefinition">id_gerente</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+              </td><td class="tdTableDefinition">id_gerente</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
@@ -315,14 +315,13 @@
 </tr>
 <tr>
 <td colspan="4">
-<div class="comment">percentual de comiss&atilde;o para empregados que estiverem no departamento de vendas<br>
-</div>
+<div class="comment">percentual de comiss&atilde;o para empregados que estiverem no departamento de vendas</div>
 </td>
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">id_departamento
                 &nbsp;(<a href="#departamentos">FK</a>)
-              </td><td class="tdTableDefinition">id_departamento</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+              </td><td class="tdTableDefinition">id_departamento</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
@@ -332,7 +331,7 @@
 <tr valign="top">
 <td class="tdTableDefinition">id_supervisor
                 &nbsp;(<a href="#empregados">FK</a>)
-              </td><td class="tdTableDefinition">id_supervisor</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+              </td><td class="tdTableDefinition">id_supervisor</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
@@ -375,6 +374,16 @@
 <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
 </tr>
 <tr valign="top">
+<td class="tdTableDefinition">id_empregado (PK)
+                &nbsp;(<a href="#empregados">FK</a>)
+              </td><td class="tdTableDefinition">id_empregado</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">chave prim&aacute;ria e chave estrangeira que vem da tabela empregados</div>
+</td>
+</tr>
+<tr valign="top">
 <td class="tdTableDefinition">data_inicial (PK)</td><td class="tdTableDefinition">data_inicial</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr>
@@ -393,16 +402,6 @@
 </td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">id_empregado
-                &nbsp;(<a href="#empregados">FK</a>)
-              </td><td class="tdTableDefinition">id_empregado</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
-</tr>
-<tr>
-<td colspan="4">
-<div class="comment">chave estrangeira que vem da tabela empregados</div>
-</td>
-</tr>
-<tr valign="top">
 <td class="tdTableDefinition">data_final</td><td class="tdTableDefinition">data_final</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr>
@@ -413,7 +412,7 @@
 <tr valign="top">
 <td class="tdTableDefinition">id_departamento
                 &nbsp;(<a href="#departamentos">FK</a>)
-              </td><td class="tdTableDefinition">id_departamento</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+              </td><td class="tdTableDefinition">id_departamento</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
@@ -489,7 +488,7 @@
 <tr valign="top">
 <td class="tdTableDefinition">id_pais
                 &nbsp;(<a href="#paises">FK</a>)
-              </td><td class="tdTableDefinition">id_pais</td><td class="tdTableDefinition">CHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+              </td><td class="tdTableDefinition">id_pais</td><td class="tdTableDefinition">CHAR</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
@@ -542,7 +541,7 @@
 <tr valign="top">
 <td class="tdTableDefinition">id_regiao
                 &nbsp;(<a href="#regioes">FK</a>)
-              </td><td class="tdTableDefinition">id_regiao</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+              </td><td class="tdTableDefinition">id_regiao</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr>
 <td colspan="4">
